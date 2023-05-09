@@ -1,3 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="btn_text">点击求和</string>
+    <string name="sum_text">列表中所有数字的和为%d</string>
+    <string name="list_text">现有列表：%s</string>
+    <string name="disabled">求和已完成</string>
 </resources>

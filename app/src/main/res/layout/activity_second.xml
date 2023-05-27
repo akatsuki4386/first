@@ -4,53 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".SecondActivity">
 
-<!--    <TextView-->
-<!--        android:id="@+id/sumList_tv"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="@string/list_text"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/btn"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:onClick="sumList"-->
-<!--        android:text="@string/btn_text"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/sumList_tv" />-->
     <TextView
-        android:id="@+id/text_main"
+        android:id="@+id/second_text"
         android:layout_marginTop="16dp"
         android:layout_marginStart="8dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/text_header_reply"
+        android:text="@string/message_received"
         android:textStyle="bold"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/text_message_one"
+        android:id="@+id/text_message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:textStyle="bold"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_main" />
+        app:layout_constraintTop_toBottomOf="@id/second_text" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editText_second"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -58,24 +37,23 @@
         android:layout_marginBottom="16dp"
         android:inputType="textLongMessage"
         android:ems="10"
-        android:hint="@string/editText"
+        android:hint="@string/editText_second"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/send"
+        app:layout_constraintEnd_toStartOf="@+id/returnReply"
         app:layout_constraintStart_toStartOf="parent"
         android:autofillHints="" />
 
     <Button
-        android:id="@+id/send"
+        android:id="@+id/returnReply"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#EDECEC"
-        android:onClick="launchSecondActivity"
-        android:text="@string/send"
+        android:onClick="returnReply"
+        android:text="@string/button_second"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

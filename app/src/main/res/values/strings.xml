@@ -4,4 +4,10 @@
     <string name="sum_text">列表中所有数字的和为%d</string>
     <string name="list_text">现有列表：%s</string>
     <string name="disabled">求和已完成</string>
+    <string name="message_received">Message received</string>
+    <string name="send">SEND</string>
+    <string name="editText">Enter Your Message Here</string>
+    <string name="button_second">Reply</string>
+    <string name="editText_second">Enter Your Reply Here</string>
+    <string name="text_header_reply">Reply Received</string>
 </resources>
